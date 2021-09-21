@@ -16,7 +16,7 @@ import java.util.Optional;
 @RequestMapping("student")
 public class StudentController {
 
-    private final StudentService studentService = new StudentService(new StudentRepo(new ArrayList<>()));
+    private final StudentService studentService = new StudentService();
 
     @GetMapping
     public List<Student> listStudents(@RequestParam Optional<String> search) {

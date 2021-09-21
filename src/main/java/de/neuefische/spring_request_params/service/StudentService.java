@@ -9,11 +9,7 @@ import java.util.Optional;
 
 public class StudentService {
 
-    private StudentRepo studentRepo;
-
-    public StudentService(StudentRepo studentRepo) {
-        this.studentRepo = studentRepo;
-    }
+    private StudentRepo studentRepo = new StudentRepo();
 
     public List<Student> list() {
         return studentRepo.getStudents();

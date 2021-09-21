@@ -8,11 +8,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 public class StudentRepo {
-    private List<Student> students;
-
-    public StudentRepo(List<Student> students) {
-        this.students = students;
-    }
+    private List<Student> students = new ArrayList<>();
 
     public List<Student> getStudents() {
         return students;
