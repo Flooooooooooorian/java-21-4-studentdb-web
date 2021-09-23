@@ -25,6 +25,10 @@ public class StudentRepo {
         return student;
     }
 
+    public void clear(){
+        students.clear();
+    }
+
     public Optional<Student> findById(String id) {
         for (Student student: students) {
             if (student.getId().equals(id)) {
